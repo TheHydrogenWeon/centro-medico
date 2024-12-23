@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Pacientes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestión de Pacientes</h1>
+    <div class="container">
+        <div class="section">
+            <h2>Crear o Actualizar Paciente</h2>
+            <form id="paciente-form">
+                <label for="id">ID (para actualizar):</label>
+                <input type="text" id="id" name="id" placeholder="Deja vacío para crear">
+                <label for="rut">RUT:</label>
+                <input type="text" id="rut" name="rut" placeholder="12345678-9">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+        <div class="section">
+            <h2>Eliminar Paciente</h2>
+            <form id="eliminar-form">
+                <label for="id_eliminar">ID del Paciente:</label>
+                <input type="text" id="id_eliminar" name="id_eliminar" placeholder="ID">
+                <button type="submit">Eliminar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

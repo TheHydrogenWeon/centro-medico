@@ -1,0 +1,1 @@
+[{"model": "api.paciente", "pk": 1, "fields": {"rut": "12345678-9", "nombre": "Juan Perez", "fecha_nacimiento": "1990-05-15"}}]
